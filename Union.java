@@ -17,9 +17,9 @@ public abstract class Union{
 	 */
 
 
-	public int  [] Elements ;
+	public int Elements [];
 
-	Union(int numberOfElements){
+	public Union(int numberOfElements){
 		 Elements = new int [numberOfElements];
 		for (int index = 0; index < numberOfElements ; index ++){
 			// Put the index value at position index
@@ -41,7 +41,9 @@ public abstract class Union{
 
 	public abstract boolean Connected(int indexA , int indexB);
 
-	public static void main(String[] args) {
-
+	public int root (int index){
+		return 9;
 	}
+
+	
 }

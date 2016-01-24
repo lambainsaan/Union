@@ -28,7 +28,7 @@ public abstract class tests{
 	
 	public void testConnected(){
 
-		TestMe.union( 1 , 9);
+		TestMe.union(1 , 9);
 		TestMe.union(2 , 1);
 		TestMe.union(9 , 8);
 		assertEquals(true , TestMe.Connected(1 , 8));
@@ -39,7 +39,7 @@ public abstract class tests{
 
 	}
 
-	@Test
+	
 	public abstract void testUnion();
 
 

@@ -13,7 +13,8 @@ public class testQuickFind extends tests{
 
 	@Before
 	public void createSet(){
-		 TestMe = new QuickFind (10);
+		
+		TestMe = new QuickFind (10);
 	}
 	@Test 
 	@Override
@@ -28,9 +29,7 @@ public class testQuickFind extends tests{
 		assertEquals(8 , TestMe.ElementAt(1));
 		assertEquals(8 , TestMe.ElementAt(2));
 		TestMe.union(3 , 4);
-		assertEquals(4 , TestMe.ElementAt(3));
-
-		
+		assertEquals(4 , TestMe.ElementAt(3));		
 		try{
 			TestMe.union(-1 , 33);
 		}catch(IndexOutOfBoundsException e){
